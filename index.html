@@ -1188,7 +1188,7 @@
                     <span class=" item-title text-center">Liên hệ</span>
                 </a>
             </div>
-
+-------
         
             <div class="page-item-wrap relative">
                 <div class="page-item flex-both-center absolute"></div>
@@ -1229,8 +1229,41 @@ function openZalo() {
 }
 </script>
 
-
+-----
         
+            <div class="page-item-wrap relative">
+                <div class="page-item flex-both-center absolute"></div>
+                <div class="page-item-wrap relative">
+    <div class="page-item flex-both-center absolute"></div>
+
+    <a href="#"
+       class="page-item-each py-10 flex-both-center"
+       onclick="openZalo(); return false;"
+       data-id="261686"
+       data-type="page_item">
+
+        <img
+            class="link-each-image"
+            src="Zalo.png"
+            alt="Zalo"
+        />
+
+        <span class="item-title text-center">test function</span>
+    </a>
+</div>
+
+<script>
+function openZalo() {
+    var phone = "84337535729";
+    var message = "Hi chào cậu";
+
+    var webLink = "https://zalo.me/" + phone + "?text=" + encodeURIComponent(message);
+
+    window.location = webLink;
+}
+</script>
+
+
 </body>
 
 <script>
