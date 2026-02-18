@@ -1131,7 +1131,7 @@
             <div class="page-item-wrap relative">
                 <div class="page-item flex-both-center absolute"></div>
                 <a target="_blank" class="page-item-each py-10 flex-both-center"
-                   href="https://zalo.me/+84337535729"
+                   href="zalo://conversation?phone=84337535729"
                    data-id="261686" data-type="page_item">
                     <img
                             class="link-each-image"
@@ -1188,6 +1188,47 @@
                     <span class=" item-title text-center">Liên hệ</span>
                 </a>
             </div>
+
+        
+            <div class="page-item-wrap relative">
+                <div class="page-item flex-both-center absolute"></div>
+                <div class="page-item-wrap relative">
+    <div class="page-item flex-both-center absolute"></div>
+
+    <a href="#"
+       class="page-item-each py-10 flex-both-center"
+       onclick="openZalo(); return false;"
+       data-id="261686"
+       data-type="page_item">
+
+        <img
+            class="link-each-image"
+            src="Zalo.png"
+            alt="Zalo"
+        />
+
+        <span class="item-title text-center">test thẻ a123</span>
+    </a>
+</div>
+
+<script>
+function openZalo() {
+    var phone = "84337535729"; // số không có dấu +
+    var message = "Hi chào cậu";
+
+    var deepLink = "zalo://conversation?phone=" + phone;
+    var webLink = "https://zalo.me/" + phone + "?text=" + encodeURIComponent(message);
+
+    // mở app
+    window.location = deepLink;
+
+    // nếu không mở được thì fallback sau 1.5 giây
+    setTimeout(function () {
+        window.location = webLink;
+    }, 1500);
+}
+</script>
+
 
         
 </body>
